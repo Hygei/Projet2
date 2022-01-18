@@ -1,0 +1,289 @@
+/* Global */
+
+body {
+    font-family: 'Raleway',Arial,serif;
+    margin:0;
+}
+
+#container {
+    width: 98%;
+    max-width: 1440px;
+    margin:auto;
+}
+
+@font-face {
+    font-family: Raleway;
+    src:url('Charset/static/Raleway-Black.ttf') format('ttf');
+}
+
+a{
+    text-decoration: none;
+}
+
+/* Partie Header */
+
+/* nav et logo */
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    margin:0 0 50px 0;
+}
+.nav{
+    margin:0;
+    padding-top:0;
+    display: flex;
+    align-items: center;
+}
+.nav a{
+    margin:0;
+    height: auto;
+    padding: 0 15px;
+    text-align: center;
+}
+
+.nav a:hover{
+    margin:0;
+    padding-top: 30px;
+    color: #0065FC;
+    border-top:3px solid #0065FC;
+}
+
+/* titres et sous titres*/
+.title_h1{
+    font-size: 22px;
+    margin: 10px 0;
+}
+
+.subtitle{
+    margin:3px 0 ;
+}
+
+.title_h2{
+    font-size: 18px;
+    margin: 0 3px;
+}
+
+/* Recherche */
+.research{
+    display: flex;
+    width: 400px;
+    height: 40px;
+    margin:15px 0;
+}
+
+.location_icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F2F2F2;
+    width: 50px;
+    border-radius: 10px 0 0 10px;
+}
+
+.research_button{
+    width: 125px;
+    height: auto;
+    background-color: #0065FC;
+    border-radius: 0 10px 10px 0;
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.research_button_icon{
+    display: none;
+}
+
+
+/* filtres */
+.filters{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.filters ul{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+.filters li{
+    height: 40px;
+    list-style: none;
+    border: solid #DEEBFF;
+    border-radius: 20px;
+    padding-left:0;
+    padding-right: 10px;
+    margin:7px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.filters i{
+    color:#0065FC ;
+    background-color: #DEEBFF;
+    width: 45px;
+    height: 45px;
+    border-radius: 20px;
+    text-align: center;
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* informations */
+.info{
+    margin: 15px 0;
+}
+.info i{
+    padding:7px 11px;
+    color: #0065FC;
+    border:#DEEBFF 1px solid;
+    border-radius: 50px;
+}
+
+/* Partie Main */
+
+/* hebergements */
+.content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 15px 0;
+}
+
+.host{
+    max-width: 900px;
+    height: auto;
+    padding: 15px;
+    margin-bottom: 15px;
+    background-color: #F2F2F2;
+    border-radius: 15px;
+}
+
+.cards_a{   
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card_a{
+    background-color: white;
+    padding:3px;
+    border-radius: 15px;
+    margin: 20px 0;
+}
+
+.card_a img{
+    width: 250px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+}
+#more{
+    margin:20px 0;
+}
+/* populaires */
+.popular{
+    width: 300px;
+    padding: 15px;
+    background-color: #F2F2F2;
+    border-radius: 15px;
+}
+.title_pop{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.card_b{
+    width: auto;
+    background-color: white;
+    padding:3px;
+    border-radius: 15px;
+    display: flex;
+    margin: 15px 0;
+}
+
+.card_b img{
+    width:100px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 15px 0 0 15px;
+}
+
+.popular_description{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    height: auto;
+    padding-left: 5px;
+}
+
+
+
+
+/* Medium devices (tablets, 992px and down) */
+@media screen and (max-width: 992px){
+
+
+
+}
+
+/* Small devices (mobiles, 768px and down) */
+@media screen and (max-width: 768px){
+/* navbar column */
+.navbar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+
+
+.nav ul{
+    width: 100%;
+    padding:0;
+}
+.nav li{
+    display: block;
+    align-items: space-around;
+}
+
+
+/* effets nav */
+.nav a{
+    padding-bottom: 30px;
+    border-bottom:3px solid #DEEBFF;
+}
+
+.nav a:hover{
+    padding-bottom: 30px;
+    border-top: none;
+    border-bottom:3px solid #0065FC;
+}
+
+/* icon recherche */
+.research_button{
+    display: none;
+}
+.research_button_icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0065FC;
+    border-radius: 0 10px 10px 0;
+    color:white;
+    width: 50px;
+    cursor: pointer;
+}
+
+}
+
+    
