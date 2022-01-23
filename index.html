@@ -27,14 +27,14 @@
                 </div>
 
                 <!--barre de recherche-->
-                <div class="research"> 
+                <form class="research"> 
                     <div class="location_icon">
                     <i class="fas fa-map-marker-alt"></i>
                     </div>
                     <input type="text" />
                     <div class="research_button">Rechercher</div>
                     <div class="research_button_icon"><i class="fas fa-search"></i></div>
-                </div>
+                </form>
 
                 <!--Filtres-->
                 <div class="filters">
@@ -95,12 +95,12 @@
                     </section>
 
                     <!--les plus populaires-->
-                    <aside class="popular">
+                    <div class="popular">
                         <div class="title_pop">
                             <h1 class="title_h1">Les plus populaires</h1>
                             <i class="fas fa-chart-line"></i>
                         </div>
-                        <div class="cards_b"></div>
+                        <div class="cards_b">
                             <article class="card_b">
                                 <img src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Le soleil du matin">
                                 <div class="popular_description">
@@ -122,62 +122,58 @@
                                     <p class="subtitle">Nuit à partir de 68€</p>
                                 </div>
                             </article>
-                        </aside >
-
-                    <!--les activités-->
-                    <section id="activities">
-                        <h1>Activités à Marseille</h1>
-                        <article>
-                            <img src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Vieux Port">
-                            <h2>Vieux Port</h2>
-                        </article>
-                        <article>
-                            <img src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Fort de Pomègues">
-                            <h2>Fort de Pomègues</h2>
-                        </article>
-                        <article>
-                            <img src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="îles du Frioul">
-                            <h2>îles du Frioul</h2>
-                        </article>
-                        <article>
-                            <img src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Parc National de Calanques">
-                            <h2>VParc National de Calanques</h2>
-                        </article>
-                        <article>
-                            <img src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="PNotre Dame de la Garde">
-                            <h2>Notre-Dame-de-la-Garde</h2>
-                        </article>
-                        <article>
-                            <img src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Parc Longchamp">
-                            <h2>Parc Longchamp</h2>
-                        </article>
-                    </section>
+                        </div>
+                    </div>
                 </div>
+                    <!--les activités-->
+                    <section class="activities">
+                        <h1 class="title_h1">Activités à Marseille</h1>
+                        <div class="cards_c">
+                            <article class="card_c shadow" id="article_1">
+                                <img src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Vieux Port">
+                                <h2 class="title_h2">Vieux Port</h2>
+                            </article>
+                            <article class="card_c shadow" id="article_2">
+                                <img src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Fort de Pomègues">
+                                <h2 class="title_h2">Fort de Pomègues</h2>
+                            </article>
+                            <article class="card_c shadow" id="article_3">
+                                <img src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="îles du Frioul">
+                                <h2 class="title_h2">îles du Frioul</h2>
+                            </article>
+                            <article class="card_c shadow" id="article_4">
+                                <img src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Parc National de Calanques">
+                                <h2 class="title_h2">Parc National de Calanques</h2>
+                            </article>
+                            <article class="card_c shadow" id="article_5">
+                                <img src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="PNotre Dame de la Garde">
+                                <h2 class="title_h2">Notre-Dame-de-la-Garde</h2>
+                            </article>
+                            <article class="card_c shadow" id="article_6">
+                                <img src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Parc Longchamp">
+                                <h2 class="title_h2">Parc Longchamp</h2>
+                            </article>
+                        </div>
+                    </section>
             </main>
 
             <!--Bas de page-->
             <footer>
-                <div>
-                    <h2>A propos</h2>
-                    <ul>
-                        <li>Fonctionnement du site</li>
-                        <li>Conditions générales de vente</li>
-                        <li>Données et confidentialité</li>
-                    </ul>
+                <div class="credit">
+                    <h2 class="title_h2">A propos</h2>
+                    <a href="#">Fonctionnement du site</a>
+                    <a href="#">Conditions générales de vente</a>
+                    <a href="#">Données et confidentialité</a>
                 </div>
-                <div>
-                    <h2>Nos hébergements</h2>
-                    <ul>
-                        <li>Charte qualité</li>
-                        <li>Soumettre votre hôtel</li>
-                    </ul>
+                <div class="credit">
+                    <h2 class="title_h2">Nos hébergements</h2>
+                    <a href="#">Charte qualité</a>
+                    <a href="#">Soumettre votre hôtel</a>
                 </div>
-                <div>
-                    <h2>Assistance</h2>
-                    <ul>
-                        <li>Centre d'aide</li>
-                        <li>Nous contacter</li>
-                    </ul>
+                <div class="credit">
+                    <h2 class="title_h2">Assistance</h2>
+                    <a href="#">Centre d'aide</a>
+                    <a href="#">Nous contacter</a>
                 </div>
             </footer>
         </div>
