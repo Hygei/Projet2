@@ -18,6 +18,7 @@ body {
 
 a{
     text-decoration: none;
+    color: black;
 }
 a:visited{
     color: black;
@@ -105,6 +106,11 @@ a:visited{
     display: none;
 }
 
+.research_bar{
+    border: none;
+    border-top: solid 1px #F2F2F2;
+    border-bottom: solid 1px #F2F2F2;
+}
 /* filtres */
 
 .filters{
@@ -126,7 +132,7 @@ a:visited{
     border: solid #F2F2F2;
     border-radius: 20px;
     padding-right: 10px;
-    margin:7px 20px 7px 0;
+    margin:7px 15px 7px 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -159,15 +165,14 @@ a:visited{
 .content{
     width: 100%;
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap-reverse;
-    margin: 50px 0;
+    justify-content: space-around;
+    margin: 30px 0;
 }
 
 /* hebergements */
 
 .host{
-    max-width: 900px;
     padding: 15px;
     margin: 10px 20px 10px 0;
     background-color: #F2F2F2;
@@ -177,13 +182,17 @@ a:visited{
     justify-content: space-between;
 }
 
-.cards_a{   
+.cards_a{  
+    max-width: 900px;
+    height: auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 }
 
 .card_a{
+    display: flex;
+    flex-direction: column;
     background-color: white;
     padding:3px;
     border-radius: 15px;
@@ -228,7 +237,7 @@ a:visited{
     padding:3px;
     border-radius: 15px;
     display: flex;
-    margin: 20px 0;
+    margin: 10px 0;
 }
 
 .card_b:hover{
@@ -288,7 +297,7 @@ a:visited{
     border-radius: 20px;
 }
 
-.card_c h2{
+.activity_description{
     position: absolute;
     width: 100%;
     background-color: white;
@@ -304,6 +313,7 @@ footer{
     background:#F2F2F2;
     height: 200px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
 }
 
@@ -318,30 +328,63 @@ footer{
 }
 
 .credit a{
-    margin: 5px;
+    margin:5px 0;
 }
 
 
 /* Media Queries */
-
-
+/* Media adaptation content à 1437px */
+@media all and (max-width: 1437px){
+    .popular{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .cards_b{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .card_b{
+        margin:7px;
+        width: 100%;
+        max-width: 350px;
+    }
+    .host{
+        width:100%;
+        margin:10px 0;
+    }
+    .cards_a{
+        width: 100%;
+        max-width: 1300px;
+    }
+    .card_a{
+        width: 100%;
+        max-width: 300px;
+    }
+    .card_a img{
+        width: 100%;
+        max-width: 300px;
+    }
+}
 
 /* Medium devices (tablets, 992px and down) */
-@media screen and (max-width: 992px){
+@media (max-width: 992px){
 
 
 
 }
 
 /* Small devices (mobiles, 768px and down) */
-@media screen and (max-width: 768px){
+@media (max-width: 768px){
 /* navbar column */
 .navbar{
     display: flex;
     flex-direction: column;
     align-items: center;
     }
-
 
 /* effets nav */
 .nav{
@@ -361,6 +404,10 @@ footer{
 }
 
 /* icon recherche */
+.research{
+    width: 100%;
+    justify-content: center;
+}
 .research_button{
     display: none;
 }
@@ -375,6 +422,71 @@ footer{
     cursor: pointer;
 }
 
+/* populaires */
+.popular{
+    border-radius: 0px;
 }
 
-    
+/* Hebergements */
+.host{
+    background-color: white;
+    margin:10px 0;
+    max-width: 424px;
+}
+.card_a{
+    width: 100%;
+    max-width: 424px;
+    box-shadow:5px 5px 15px 5px #F2F2F2;
+}
+.card_a img{
+    width: 100%;
+    max-width: 424px;
+    max-height: 100px;
+}
+
+/* Activities */
+.activities{
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    padding: 15px;
+    max-width: 424px;
+    width: 100%;
+}
+.cards_c{
+    width: 100%;
+    max-width: 424px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+
+}
+.card_c img{
+    width: 100%;
+    max-width: 424px;
+    max-height: 100px;
+    border-radius:15px 15px 0 0;
+}
+.card_c{
+    width: 100%;
+    max-width: 424px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.activity_description{
+    padding: 10px 0 10px 5%;
+    position: static;
+    background-color: transparent;
+}
+
+/* footer */
+footer{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+}
+
+}
