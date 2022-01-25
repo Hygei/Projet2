@@ -37,6 +37,8 @@ a:visited{
     justify-content: space-between;
     margin-bottom:50px;
 }
+
+
 .nav{
     padding-top:0;
     display: flex;
@@ -120,6 +122,9 @@ a:visited{
     margin-bottom: 15px;
 }
 
+.filters h2{
+    margin-right: 16px;
+}
 .filters ul{
     display: flex;
     flex-wrap: wrap;
@@ -138,6 +143,10 @@ a:visited{
     align-items: center;
 }
 
+.filters li:hover{
+    background-color: #0065FC;
+    color:white;
+}
 .filters i{
     color:#0065FC ;
     background-color: #DEEBFF;
@@ -161,7 +170,6 @@ a:visited{
 }
 
 /* Partie Main */
-
 .content{
     width: 100%;
     display: flex;
@@ -226,6 +234,9 @@ a:visited{
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+.title_pop i{
+    font-size: 20px;
 }
 .cards_b{
     display: flex;
@@ -313,12 +324,12 @@ footer{
     background:#F2F2F2;
     height: 200px;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
 }
 
 .credit{
+    width: 30%;
     margin-top: 20px;
+    margin-left: 30px;
     display: flex;
     flex-direction: column;
 }
@@ -378,7 +389,7 @@ footer{
 }
 
 /* Small devices (mobiles, 768px and down) */
-@media (max-width: 768px){
+@media all and (max-width: 768px){
 /* navbar column */
 .navbar{
     display: flex;
@@ -431,16 +442,15 @@ footer{
 .host{
     background-color: white;
     margin:10px 0;
-    max-width: 424px;
 }
 .card_a{
     width: 100%;
-    max-width: 424px;
+    max-width: 356px;
     box-shadow:5px 5px 15px 5px #F2F2F2;
 }
 .card_a img{
     width: 100%;
-    max-width: 424px;
+    max-width: 356px;
     max-height: 100px;
 }
 
@@ -448,35 +458,31 @@ footer{
 .activities{
     display: flex;
     flex-direction: column;
-    align-content: space-around;
     padding: 15px;
-    max-width: 424px;
-    width: 100%;
+    width: 96%;
 }
 .cards_c{
-    width: 100%;
-    max-width: 424px;
-    margin: auto;
     display: flex;
     flex-direction: column;
-
-}
-.card_c img{
-    width: 100%;
-    max-width: 424px;
-    max-height: 100px;
-    border-radius:15px 15px 0 0;
+    align-items: center;
 }
 .card_c{
     width: 100%;
-    max-width: 424px;
-    margin: 10px;
+    max-width: 356px;
+    margin: 10px 20px 10px 10px;
     display: flex;
     flex-direction: column;
 }
+.card_c img{
+    width: 100%;
+    max-width: 362px;
+    max-height: 100px;
+    border-radius:15px 15px 0 0;
+}
 .activity_description{
-    padding: 10px 0 10px 5%;
-    position: static;
+    position: inherit;
+    width: 80%;
+    padding: 10px 0 10px 15px;
     background-color: transparent;
 }
 
