@@ -192,16 +192,15 @@ a:visited{
 }
 
 main .title_h2{
-    padding-left: 10px;
+    padding: 0 5px;
 }
 
 main .subtitle{
-    padding-left: 10px;
-}
+    padding: 0 5px;}
 
 .stars{
     color: #0065FC;
-    padding-left: 10px;
+    padding: 0 5px;
     margin: 3px 0;
 }
 .hostingMainCardGradeIconEmpty{
@@ -507,6 +506,31 @@ footer{
     flex-wrap: wrap;
     justify-content: space-around ;
 }
+#article_1{
+    width: 100%;
+    max-width: 310px;
+}
+#article_2{
+    width: 100%;
+    max-width: 310px;
+}
+#article_3{
+    width: 100%;
+    max-width: 310px;
+}
+#article_4{
+    width: 100%;
+    max-width: 310px;
+}
+#article_5{
+    width: 100%;
+    max-width: 310px;
+}
+#article_6{
+    width: 100%;
+    max-width: 310px;
+}
+
 .card_c{
     width: 100%;
     max-width: 310px;
