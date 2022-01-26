@@ -302,19 +302,19 @@ main .subtitle{
     margin-bottom: 40px;
     display: grid; 
     grid-template-columns: 1fr 1fr 1fr 1fr; 
-    grid-template-rows: 1fr 0.5fr 1fr; 
-    gap: 40px 40px; 
+    grid-template-rows: 0.5fr 1fr 0.5fr; 
+    gap: 40px 40px;
     grid-template-areas: 
       "article_1 article_2 article_4 article_5"
       "article_1 article_2 article_4 article_6"
       "article_1 article_3 article_4 article_6";
 }
-#article_1 { grid-area: article_1; }
-#article_2 { grid-area: article_2; }
-#article_3 { grid-area: article_3; }
-#article_4 { grid-area: article_4; }
-#article_5 { grid-area: article_5; }
-#article_6 { grid-area: article_6; }
+#article_1 { grid-area: article_1;}
+#article_2 { grid-area: article_2;}
+#article_3 { grid-area: article_3;}
+#article_4 { grid-area: article_4;}
+#article_5 { grid-area: article_5;}
+#article_6 { grid-area: article_6;}
 
 .card_c:hover{
     cursor: pointer;
