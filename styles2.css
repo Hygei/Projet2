@@ -24,10 +24,6 @@ a:visited{
     color: black;
 }
 
-.shadow{
-    box-shadow:5px 5px 15px 5px #F2F2F2;
-}
-
 /* Partie Header */
 
 /* nav et logo */
@@ -176,6 +172,7 @@ a:visited{
     padding-left: 10px;
 }
 /* Partie Main */
+/* Content */
 .content{
     width: 100%;
     display: flex;
@@ -184,17 +181,31 @@ a:visited{
     margin: 30px 0;
 }
 
-main a{
+.host a{
     width: 100%;
-    max-width: 300px;
+    max-width: 250px;
     margin:13px;
+}
+.popular a{
+    width: 100%;
+    max-width: 356px;
 }
 
 main .title_h2{
     padding-left: 10px;
 }
+
 main .subtitle{
     padding-left: 10px;
+}
+
+.stars{
+    color: #0065FC;
+    padding-left: 10px;
+    margin: 3px 0;
+}
+.hostingMainCardGradeIconEmpty{
+    color: #F2F2F2;
 }
 /* hebergements */
 
@@ -210,7 +221,6 @@ main .subtitle{
 
 .cards_a{  
     max-width: 900px;
-    height: auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -222,7 +232,6 @@ main .subtitle{
     background-color: white;
     padding:3px;
     border-radius: 15px;
-    margin: 10px;
 }
 
 .card_a:hover{
@@ -232,7 +241,7 @@ main .subtitle{
 }
 
 .card_a img{
-    max-width: 300px;
+    max-width: 250px;
     height: 100px;
     object-fit: cover;
     border-radius: 15px 15px 0 0;
@@ -260,7 +269,6 @@ main .subtitle{
 .cards_b{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
 }
 .card_b{
     background-color: white;
@@ -284,17 +292,19 @@ main .subtitle{
 }
 
 .popular_description{
-    padding-left: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 /* Activités */
 
 .cards_c{
-    margin-bottom: 60px;
+    margin-bottom: 40px;
     display: grid; 
     grid-template-columns: 1fr 1fr 1fr 1fr; 
-    grid-template-rows: 0.5fr 0.25fr 0.5fr; 
-    gap: 20px 20px; 
+    grid-template-rows: 1fr 0.5fr 1fr; 
+    gap: 40px 40px; 
     grid-template-areas: 
       "article_1 article_2 article_4 article_5"
       "article_1 article_2 article_4 article_6"
@@ -313,30 +323,30 @@ main .subtitle{
     transition: ease 0.4s;
 }
 
-.cards_c img{
-    object-fit: cover;
-    border-radius: 20px;
-    width: 100%;
+.card_c{
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    box-shadow:5px 5px 15px 5px #F2F2F2;
 }
 
-.card_c{
-    position: relative;
+.card_c img{
+    flex: 1 1 auto;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
     width: 100%;
     height: 100%;
-    border-radius: 20px;
 }
 
 .activity_description{
-    position: absolute;
-    width: 100%;
-    background-color: white;
+    flex: 1 0 50px;
     border-radius: 0 0 20px 20px;
-    padding: 20px 0 20px 0;
-    margin: 0;
-    bottom: 0;
 }
 
+.activity_description h2{
+    margin: revert;
+}
 /* Footer */
 
 footer{
@@ -363,12 +373,16 @@ footer{
 
 
 /* Media Queries */
-/* Media adaptation content à 1437px */
-@media all and (max-width: 1437px){
+/* Media adaptation content à 1439px */
+@media all and (max-width: 1439px){
+
     .popular{
         width: 100%;
         display: flex;
         flex-direction: column;
+    }
+    .popular a{
+        margin:5px;
     }
     .cards_b{
         width: 100%;
@@ -378,7 +392,6 @@ footer{
         justify-content: space-around;
     }
     .card_b{
-        margin:7px;
         width: 100%;
         max-width: 350px;
     }
@@ -386,12 +399,14 @@ footer{
         width:100%;
         margin:10px 0;
     }
+    .host a{
+        max-width: 300px;
+    }
     .cards_a{
         width: 100%;
         max-width: 1300px;
     }
     .card_a{
-        width: 100%;
         max-width: 300px;
     }
     .card_a img{
@@ -414,6 +429,9 @@ footer{
 /* Small devices (mobiles, 768px and down) */
 @media all and (max-width: 768px){
 /* navbar column */
+.logo{
+    object-position: 33px;
+}
 .navbar{
     display: flex;
     flex-direction: column;
@@ -446,6 +464,7 @@ footer{
     display: none;
 }
 .research_button_icon{
+    transform: translate(-7px);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -482,32 +501,27 @@ footer{
     display: flex;
     flex-direction: column;
     padding: 15px;
-    width: auto;
 }
 .cards_c{
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around ;
 }
 .card_c{
     width: 100%;
-    max-width: 356px;
-    margin: 10px 20px 10px 10px;
+    max-width: 310px;
     display: flex;
     flex-direction: column;
 }
 .card_c img{
-    width: 100%;
-    max-width: 362px;
     max-height: 100px;
     border-radius:15px 15px 0 0;
 }
 .activity_description{
-    position: inherit;
-    width: auto;
+    width: 100%;
     padding: 10px 0;
-    background-color: transparent;
 }
+
 
 /* footer */
 footer{
