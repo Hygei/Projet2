@@ -146,6 +146,8 @@ a:visited{
 .filters li:hover{
     background-color: #0065FC;
     color:white;
+    cursor: pointer;
+
 }
 .filters i{
     color:#0065FC ;
@@ -154,10 +156,10 @@ a:visited{
     height: 45px;
     border-radius: 20px;
     text-align: center;
-    margin-right: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
+    transform: translate(-5px)
 }
 
 /* informations */
@@ -169,6 +171,10 @@ a:visited{
     border-radius: 50px;
 }
 
+.info p{
+    display: inline;
+    padding-left: 10px;
+}
 /* Partie Main */
 .content{
     width: 100%;
@@ -178,6 +184,18 @@ a:visited{
     margin: 30px 0;
 }
 
+main a{
+    width: 100%;
+    max-width: 300px;
+    margin:13px;
+}
+
+main .title_h2{
+    padding-left: 10px;
+}
+main .subtitle{
+    padding-left: 10px;
+}
 /* hebergements */
 
 .host{
@@ -214,13 +232,14 @@ a:visited{
 }
 
 .card_a img{
-    width: 250px;
+    max-width: 300px;
     height: 100px;
     object-fit: cover;
     border-radius: 15px 15px 0 0;
 }
 #more{
     margin:20px 0;
+    cursor: pointer;
 }
 /* populaires */
 
@@ -313,7 +332,7 @@ a:visited{
     width: 100%;
     background-color: white;
     border-radius: 0 0 20px 20px;
-    padding: 20px 0 20px 5%;
+    padding: 20px 0 20px 0;
     margin: 0;
     bottom: 0;
 }
@@ -376,6 +395,10 @@ footer{
         max-width: 300px;
     }
     .card_a img{
+        width: 100%;
+        max-width: 300px;
+    }
+    .host_description{
         width: 100%;
         max-width: 300px;
     }
@@ -459,7 +482,7 @@ footer{
     display: flex;
     flex-direction: column;
     padding: 15px;
-    width: 96%;
+    width: auto;
 }
 .cards_c{
     display: flex;
@@ -481,8 +504,8 @@ footer{
 }
 .activity_description{
     position: inherit;
-    width: 80%;
-    padding: 10px 0 10px 15px;
+    width: auto;
+    padding: 10px 0;
     background-color: transparent;
 }
 
@@ -495,4 +518,8 @@ footer{
     align-content: space-around;
 }
 
+.credit{
+    width: auto;
+    margin-left: 15%;
+}
 }
