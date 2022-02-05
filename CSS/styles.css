@@ -449,7 +449,7 @@ footer{
 
 .nav a:hover{
     padding-bottom: 30px;
-    border-top: none;
+    border-top: 3px solid transparent;
     border-bottom:3px solid #0065FC;
 }
 
